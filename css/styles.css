@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
 
-/*
 html,body{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(img/pexels-engin-akyurt-1435903.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-} */
+    height: 100%;
+    width: 100%;
+    font-family: 'crimson+Pro', sans-serif;
+    color: #222;
+}
