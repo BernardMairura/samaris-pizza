@@ -43,21 +43,25 @@ height: 100%;
  }
  .social{
      font-size: 4.5rem;
-     padding: 3rem;
+   
  }
  .fa-facebook{
      color: #3b5998;
+     padding: 3rem;
  }
 
  .fa-twitter{
      color: #00acee;
+     padding: 3rem;
  }
   .fa-instagram{
       color: #3f729b;
+      padding: 3rem;
   }
 
 .fa-whatsapp{
     color: #25D366;
+    padding: 3rem;
 }
 
 .fa-instagram:hover,
@@ -71,5 +75,22 @@ height: 100%;
 footer{
     background-color: #3f3f3f;
     color: #d5d5d5;
+    padding-top: 2rem;
 
+}
+
+hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+}
+
+
+footer a{
+    color: #d5d5d5;
+}
+
+hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+} 
 }
