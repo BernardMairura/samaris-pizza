@@ -6,3 +6,70 @@ html,body{
     font-family: 'crimson+Pro', sans-serif;
     color: #222;
 }
+
+.navbar{
+padding: .8rem; /*1 rem =2pxs */
+}
+.navbar nav li{
+    padding-right: 20px;
+}
+ .nav-link{
+font-size: 1.1em !important;
+ }
+
+.carousel-inner img{
+width: 100%;
+height: 100%;
+ }
+ .carousel-caption{
+     position: absolute;
+     top: 60%;
+     transform: translateY(-50%); 
+ }
+ .carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+
+ }
+ .carousel-caption h3{
+     font-size: 200%;
+     font-weight: 500;
+     text-shadow: 1px 1px 10px #000;
+ }
+
+ .padding{
+     padding-bottom: 2rem;
+ }
+ .social{
+     font-size: 4.5rem;
+     padding: 3rem;
+ }
+ .fa-facebook{
+     color: #3b5998;
+ }
+
+ .fa-twitter{
+     color: #00acee;
+ }
+  .fa-instagram{
+      color: #3f729b;
+  }
+
+.fa-whatsapp{
+    color: #25D366;
+}
+
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover{
+    color: #d5d5d5;
+
+}
+
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+
+}
