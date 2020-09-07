@@ -101,25 +101,100 @@
           </div>
       </div>
   </div>
-  <!--3 column section-->
-  <div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-code"></i>
-            <h3>LARGE Size</h3>
-            <p>some list</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-code"></i>
-            <h3>Medium Size</h3>
-            <p>some list</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <i class="fas fa-code"></i>
-            <h3>Small Size</h3>
-            <p>some list</p>
-        </div>
-    </div>
+  <!--3 classic pizzas-->
+  <div class="jumbotron padding">
+      <div class="row padding">
+            <div class="col-md 4">
+                <div class="card">
+                    <h3>CLASSIC PIZZAS</h3>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">CHICKEN SUPREME</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">CHICKEN BALI</h6>
+                        <p class="card-text">about Crispy</p>
+                        <a href="#" class="btn btn-outline-secondary">See Details</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">BBQ STEAK</h6>
+                        <p class="card-text">price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">MARGARITTA</h6>
+                        <p class="card-text">price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                </div>
+            </div>
+            <!--favourite-->
+            <div class="col-md 4">
+                <div class="card">
+                    <h3>FOVOURITE PIZZAS</h3>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">PEPPORONI PASSION</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">PERIPERI CHICKEN</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">HAWAIIAN</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">VEGGIE DULEX</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                </div>
+            </div>
+            <!--ultimate pizzas-->
+            <div class="col-md 4">
+                <div class="card">
+                    <h3>ULTIMATE PIZZAS</h3>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">BBQ CHICKEN</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">VEGGIE EXTRAVAGANZA</h6>
+                        <p class="card-text">Prie</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h4 class="card-title">CHICKEN TIKKA</h4>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                    <img class="card-img-top" src="img/backg4.jpg" alt="backg4">
+                    <div class="card-body">
+                        <h6 class="card-title">AMERICAN CHEEZBURGER</h6>
+                        <p class="card-text">Price</p>
+                        <a href="#" class="btn btn-outline-secondary">Toppings</a>
+                    </div>
+                </div>
+            </div>
+          </div>   
+      </div>
     <hr class="my-4">
   </div>
   <!--2 column section-->
@@ -140,6 +215,23 @@
             </div>
         </div>  
   </div>
+  <form name="ShoppingList">
+    <fieldset>
+        <legend>Shopping cart</legend>
+        <label>Item: <input type="text" name="name"></label>
+        <label>Quantity: <input type="text" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+    <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        * Delete all items</label>
+    </div>
+</form>
   <hr class="my-4">
   <!--Fixed Image background-->
   <figure>
