@@ -1,7 +1,19 @@
-$( window ).load(function() {
+$(document).ready(function(){
+
+  $( ".cardTitle" ).load(function() {
     doShowAll();
   });
 
+
+});
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 
 
 
