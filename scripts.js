@@ -1,50 +1,30 @@
-$( window ).load(function() {
+/*$(document).ready(function(){
+
+  $( ".cardTitle" ).load(function() {
     doShowAll();
   });
 
 
+});
+//slide section
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 
 
+//pizza calculations
 
-var pizzaIngredients = {};
-pizzaIngredients.meats = [
+/*var pizzaCategories = {};
+pizzaCategories.meats = [
   "Pepperoni",
   "Sausage",
-  "Fennel Sausage",
-  "Spicy Sausage",
-  "Chicken",
-  "BBQ Chicken",
-  "Chorizo",
-  "Chicken Andouille",
-  "Salami",
-  "Tofu",
-  "Bacon",
-  "Canadian Bacon",
-  "Proscuitto",
-  "Italian Sausage",
-  "Ground Beef",
-  "Anchovies",
-  "Turkey",
-  "Ham",
-  "Venison",
-  "Lamb",
-  "Duck",
-  "Soylent Green",
-  "Carne Asada",
-  "Soppressata Picante",
-  "Coppa",
-  "Pancetta",
-  "Bresola",
-  "Lox",
-  "Guanciale",
-  "Chili",
-  "Beef Jerky",
-  "Pastrami",
-  "Kielbasa",
-  "Scallops",
   "Filet Mignon"
 ];
-pizzaIngredients.nonMeats = [
+pizzaCategories.nonMeats = [
   "White Onions",
   "Red Onions",
   "Sauteed Onions",
@@ -54,38 +34,11 @@ pizzaIngredients.nonMeats = [
   "Ghost Peppers",
   "Habanero Peppers",
   "Jalapeno Peppers",
-  "Stuffed Peppers",
-  "Spinach",
-  "Tomatoes",
-  "Pineapple",
-  "Pear Slices",
-  "Apple Slices",
-  "Mushrooms",
-  "Arugula",
-  "Basil",
-  "Fennel",
-  "Rosemary",
-  "Cilantro",
   "Avocado",
-  "Guacamole",
-  "Salsa",
-  "Swiss Chard",
-  "Kale",
-  "Sun Dried Tomatoes",
-  "Walnuts",
-  "Artichoke",
-  "Asparagus",
-  "Caramelized Onions",
-  "Mango",
-  "Garlic",
-  "Olives",
-  "Cauliflower",
-  "Polenta",
-  "Fried Egg",
   "Zucchini",
   "Hummus"
 ];
-pizzaIngredients.cheeses = [
+pizzaCategories.cheeses = [
   "American Cheese",
   "Swiss Cheese",
   "Goat Cheese",
@@ -94,25 +47,6 @@ pizzaIngredients.cheeses = [
   "Velveeta Cheese",
   "Gouda Cheese",
   "Muenster Cheese",
-  "Applewood Cheese",
-  "Asiago Cheese",
-  "Bleu Cheese",
-  "Boursin Cheese",
-  "Brie Cheese",
-  "Cheddar Cheese",
-  "Chevre Cheese",
-  "Havarti Cheese",
-  "Jack Cheese",
-  "Pepper Jack Cheese",
-  "Gruyere Cheese",
-  "Limberger Cheese",
-  "Manchego Cheese",
-  "Marscapone Cheese",
-  "Pecorino Cheese",
-  "Provolone Cheese",
-  "Queso Cheese",
-  "Roquefort Cheese",
-  "Romano Cheese",
   "Ricotta Cheese",
   "Smoked Gouda"
 ];
@@ -123,9 +57,56 @@ pizzaIngredients.sauces = [
   "No Sauce",
   "Hot Sauce"
 ];
-pizzaIngredients.crusts = [
-  "White Crust",
-  "Whole Wheat Crust",
-  "Flatbread Crust",
-  "Stuffed Crust"
-];
+pizzaCategories.crusts = [
+  "Crispy",
+  "Glutten-free",
+  "Stuffed"
+];*/
+var tbl = document.getElementById('tbllist');
+var rowlist = document.getElementsByTagName('tr');
+function AddItem()
+{
+ 
+  let qtyval = parseInt(document.getElementById('qty').value);
+  if(!isNaN(qtyval) && qtyval > 0)
+  {
+    var rowlist = document.getElementsByTagName('tr');
+    let row = tbl.insertRow(rowlist.length);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    cell1.innerHTML =  `${document.getElementById('itmlist').value} - ${document.getElementById('crustlist').value} - ${document.getElementById('toppinglist').value} `;
+    cell2.innerHTML = document.getElementById('size').value;
+    cell3.innerHTML = document.getElementById('qty').value;
+
+  }
+  else{
+    alert("Qty cannot be blank or negative")
+  }
+ 
+}
+function RemoveItem()
+{
+  var rowlist = document.getElementsByTagName('tr');
+  if(rowlist.length > 1)
+  {
+
+
+    tbl.deleteRow(rowlist.length-1)
+
+  }
+
+  
+}
+function ClearAll()
+{
+
+  var rowlist = document.getElementsByTagName('tr');
+  for(i = rowlist.length;i>1;i--)
+  {
+    tbl.deleteRow(rowlist.length -1 );
+
+  }
+  
+
+}
