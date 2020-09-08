@@ -1,12 +1,12 @@
 <!--headings-->
 
-# {Moringa Prep34 Project-Delani Studio}
+# {Moringa Prep34 Project-Samaris Pizza}
 
-#### {Using JQUery and JavaScript to Traverse DOM}, {28th Aug 2020}
+#### {Using Constructor & Prototypes}, {4th Sept 2020}
 
 ## Description
 
-{This project  focuses on the use of JQUERY and JavaScript to demontrate  on how one can manipulate the DOM(Document Object model) of a page dynamically to add, delete and modify elements.
+{I have used figma to design my prototype and attached is the link: https://www.figma.com/file/7JuMcYkV9sRmQgBG0w3esJ/Samaris-Pizza?node-id=0%3A1
  
  I have used Bootstrap for styling and a custom css sytle to manage the images.}
 
@@ -23,12 +23,13 @@
 
 ## Known Bugs
 
-{Not a bug really but one should consider the folder path and case sensitivity when pushing Images to Github website.They will not dsiplay when published on github but  work ok on the local environment. }
+{None so far }
 
 ## Technologies Used
 
 {The topics or modules covered in this project include but not limited to;}
 
+* Figma : https://www.figma.com/file/7JuMcYkV9sRmQgBG0w3esJ/Samaris-Pizza?node-id=0%3A1
 * CSS
 * HTML5
 * JavaScript

@@ -110,3 +110,16 @@ function ClearAll()
   
 
 }
+var 
+
+ultimatePizzas={ size:["large","medium","small"],
+                price:[1250,900,700],
+                 item:["bbqChicken","veggieExtravaganza","chickenTikka","americanCheezburger"]}
+
+favouritePizzas={size:["large","medium","small"],
+                price:[1050,800,600],
+                item:["pepporoniPassion","periperiChecken","hawaiian","veggiedulex"]}
+
+classicPizzas={size:["large","medium","small"],
+               price:[950,700,500],
+               item:["chickenSupreme","chickenBali","bbqSteak","margaritta"]}
