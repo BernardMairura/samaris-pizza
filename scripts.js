@@ -62,6 +62,7 @@ pizzaCategories.crusts = [
   "Glutten-free",
   "Stuffed"
 ];*/
+/*
 var tbl = document.getElementById('tbllist');
 var rowlist = document.getElementsByTagName('tr');
 function AddItem()
@@ -109,17 +110,49 @@ function ClearAll()
   }
   
 
-}
-var 
-
-ultimatePizzas={ size:["large","medium","small"],
+}*/
+var  ultimatePizzas={ size:["large","medium","small"],
                 price:[1250,900,700],
                  item:["bbqChicken","veggieExtravaganza","chickenTikka","americanCheezburger"]}
 
-favouritePizzas={size:["large","medium","small"],
+var favouritePizzas={size:["large","medium","small"],
                 price:[1050,800,600],
                 item:["pepporoniPassion","periperiChecken","hawaiian","veggiedulex"]}
 
-classicPizzas={size:["large","medium","small"],
+var classicPizzas={size:["large","medium","small"],
                price:[950,700,500],
                item:["chickenSupreme","chickenBali","bbqSteak","margaritta"]}
+
+var  pizzagrplarge =  document.querySelector("#pizzagrp1-large"); 
+var  pizzagrpmedium =  document.querySelector("#pizzagrp1-medium"); 
+var  pizzagrpsmall =  document.querySelector("#pizzagrp1-small"); 
+var pshow = document.querySelector("#idprice1");
+var addtocart = document.querySelector("#addtocart1");
+var rmvfrmcart = document.querySelector("#rmvtocart1");
+var cartno = document.querySelector("#cartno");
+var noofitemsincart = 0;
+
+pizzagrplarge.onclick = () => {
+  pshow.innerText = 1250.00;
+}
+pizzagrpmedium.onclick = () => {
+  pshow.innerText = 900.00;
+}
+pizzagrpsmall.onclick = () => {
+  pshow.innerText = 70.00;
+}
+addtocart.onclick = () => {
+  noofitemsincart += 1;
+  cartno.innerText = noofitemsincart;
+
+}
+rmvfrmcart.onclick = () => {
+
+if(noofitemsincart > 0)
+{
+   noofitemsincart -= 1;
+    cartno.innerText = noofitemsincart; 
+}
+
+
+}
