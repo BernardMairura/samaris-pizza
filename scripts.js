@@ -139,7 +139,7 @@ pizzagrpmedium.onclick = () => {
   pshow.innerText = 900.00;
 }
 pizzagrpsmall.onclick = () => {
-  pshow.innerText = 70.00;
+  pshow.innerText = 700.00;
 }
 addtocart.onclick = () => {
   noofitemsincart += 1;
